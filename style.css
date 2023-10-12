@@ -1,0 +1,141 @@
+ /* this is an idea for what the random images floating around could look like */
+ .red{
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:width; top:width;}
+    50%  {left:400px; top:500px;}
+    75%  { left:600px; top:200px;}
+    100% {left:900px; top:0px;}
+  }
+
+  a {
+    text-decoration: none;
+}
+
+
+
+a1{
+    color:red;
+    font-size:146px;
+    font-weight: bold;
+}
+
+a1:active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+
+  a2{
+    color:rgb(0, 0, 0);
+  }
+
+  a2:active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  a3{
+    color:red;
+    font-weight: bold;
+  }
+
+  a3:active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+
+
+body {
+    background-color: rgb(227, 227, 227);
+    font-family: Tahoma, sans-serif;
+  }
+
+
+  .navigation {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap; 
+  }
+
+  .navigation > * {
+    padding: 1px;
+    flex: 1 40%;
+    
+  }
+  
+  .left1 {
+  
+    font-size: 20px;
+    margin-left: 20px;
+  
+   
+  }
+
+  .img1 {
+    padding: 40px;
+  height: auto;
+  }
+  
+  .pr {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+  }
+
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+
+  figcaption{
+    color: rgb(0, 0, 0);
+  font-style: italic;
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+
+/* .navigation {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px
+   
+
+}
+
+.img1 {
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+
+
+figcaption{
+    color: white;
+  font-style: italic;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.pr {
+    color: rgb(247, 29, 29);
+    font-size: 25px;
+} */
